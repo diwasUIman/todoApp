@@ -11,8 +11,6 @@ export default class CountryListClass extends React.Component{
     }
 
     render(){
-        let countryDetails = getData().then(item => item)
-        console.log("print here " + countryDetails)
         return(
             <CountryDetailsList Name="Milan" />
         )
