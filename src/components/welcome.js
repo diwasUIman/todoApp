@@ -10,7 +10,8 @@ export default class Welcome extends React.Component {
         return (
             <div>
                 <h1> Welcome to the page, {name}</h1>
-                <List />
+                <List Name="Javascript" />
+                <CountryListClass />
             </div>
         )
     }
