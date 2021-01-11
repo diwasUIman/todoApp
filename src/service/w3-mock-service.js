@@ -1,4 +1,5 @@
 let url = "https://www.w3schools.com/angular/customers.php";
+let placeHolderApiUrl = "https://jsonplaceholder.typicode.com/posts";
 
 let data = function () {
     return fetch(url).then(res => res.json()).then(item => item.records)
@@ -14,6 +15,17 @@ function getData() {
             }
         })
     })
+}
+
+function getMockApi(){
+    fetch(placeHolderApiUrl)
+        .then(res => res.json()
+        .then(data => {
+            if(data){
+                data;
+            }
+        })
+    )
 }
 
 let w3_mock = {
@@ -51,4 +63,4 @@ let w3_mock = {
 }
 
 
-export { getData, data, w3_mock }
+export { getData, data, w3_mock, getMockApi }
