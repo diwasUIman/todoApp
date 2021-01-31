@@ -6,6 +6,7 @@ import Welcome from './components/welcome'
 import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
 import allReducer from './components/reducers/combineReducer';
+import { Provider } from "react-redux";
 
 const store = createStore(
   allReducer,
@@ -14,7 +15,9 @@ const store = createStore(
 
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome />
+    <Provider store={store}>
+      <Welcome />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
