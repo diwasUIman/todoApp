@@ -1,8 +1,5 @@
 import React from "react";
-// import ReactCOM from "react-dom";
-// import List from './List';
-// import CountryListClass from './country-list-class';
-import Counter from "./redux-module/counter-react-redux";
+import Hello from "./redux-module/main";
 
 export default class Welcome extends React.Component {
     
@@ -10,9 +7,7 @@ export default class Welcome extends React.Component {
     const name = "milan";
         return (
             <div>
-                {/* <h1> Welcome to the page, {name}</h1>
-                <List Name="Javascript" /> */}
-                <Counter />
+                <Hello />
             </div>
         )
     }

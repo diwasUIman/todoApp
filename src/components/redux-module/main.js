@@ -1,9 +1,9 @@
 import { React } from 'react';
 
-export default function Counter(){
+export default function Hello(){
     return(
         <div>
-            <h2>Counter : </h2>
+            <h2>Hello World</h2>
         </div>
     )
 } 
