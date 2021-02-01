@@ -4,10 +4,20 @@ import './index.css';
 import App from './App';
 import Welcome from './components/welcome'
 import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import allReducer from './reducers/combineReducer';
+import { Provider } from "react-redux";
+
+const store = createStore(
+  allReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
 
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome />
+    <Provider store={store}>
+      <Welcome />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
