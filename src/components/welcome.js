@@ -1,5 +1,5 @@
 import React from "react";
-import Hello from "./redux-module/main";
+import MainComponent from "./redux-module/main";
 
 export default class Welcome extends React.Component {
     
@@ -7,7 +7,7 @@ export default class Welcome extends React.Component {
     const name = "milan";
         return (
             <div>
-                <Hello />
+                <MainComponent />
             </div>
         )
     }
